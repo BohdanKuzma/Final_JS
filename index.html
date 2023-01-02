@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control work №1</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="block topblock">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="btn_wrapper">
+            <button class="edit">edit</button>
+            <button class="style">style</button>
+        </div>
+        <div class="block botblock">
+            <textarea name="t1" class="textarea" cols="30" rows="10"></textarea>
+            <div class="style_form">
+                <form>
+                    <h4 class="heading">Font Size:</h4>
+                    <input type="radio" name="fz" class="rad_btn" value="12px"><span class="spanfz">12px</span>
+                    <input type="radio" name="fz" class="rad_btn" value="14px"><span class="spanfz">14px</span>
+                    <input type="radio" name="fz" class="rad_btn" value="16px"><span class="spanfz">16px</span>
+                    <input type="radio" name="fz" class="rad_btn" value="18px"><span class="spanfz">18px</span>
+                    <input type="radio" name="fz" class="rad_btn" value="20px"><span class="spanfz">20px</span>
+                    <h4 class="heading">Font Family:</h4>
+                    <select name="ff" class="ffselect">
+                        <option value="Choose option">Choose option</option>
+                        <option value="cursive">cursive</option>
+                        <option value="fantasy">fantasy</option>
+                        <option value="monospace">monospace</option>
+                        <option value="sens-serif">sens-serif</option>
+                    </select>
+                    <h4 class="heading">Colors:</h4>
+                    <button class="btn_color" type="button">Color of text</button>
+                    <button class="btn_bg" type="button">Background color</button>
+                    <h4 class="heading">Style:</h4>
+                    <input type="checkbox" name="bold" id="" class="checkbox_style bold" value="bold"><span
+                        class="span_style">Bold text</span>
+                    <input type="checkbox" name="cursive" id="" class="checkbox_style cursive" value="cursive"><span
+                        class="span_style">Cursive text</span>
+                </form>
+                <div class="colortext">
+                    <div class="color"></div>
+                    <div class="color"></div>
+                    <div class="color"></div>
+                    <div class="color"></div>
+                    <div class="color"></div>
+                    <div class="color"></div>
+                    <div class="color"></div>
+                    <div class="color"></div>
+                    <div class="color"></div>
+                </div>
+                <div class="backcolor">
+                    <div class="color"></div>
+                    <div class="color"></div>
+                    <div class="color"></div>
+                    <div class="color"></div>
+                    <div class="color"></div>
+                    <div class="color"></div>
+                    <div class="color"></div>
+                    <div class="color"></div>
+                    <div class="color"></div>
+                </div>
+            </div>
+            <button class="add">add</button>
+            <button class="save">save</button>
+        </div>
+        <div>
+        </div>
+    </div>
+    <div class="addSection">
+        <h2>Choose what you want</h2>
+        <input type="radio" name="add_btn" class="add_table"><span class="spanfz">table</span>
+        <input type="radio" name="add_btn" class="add_list"><span class="spanfz">list</span>
+        <div class="table_construktor">
+            <div class="first">
+                <span class="heading">Count TR:</span>
+                <input type="text" class="text_table table1">
+                <span class="heading">Count TD:</span>
+                <input type="text" class="text_table table2">
+            </div>
+            <h2>Add style to your table:</h2>
+            <div class="middle">
+                <span class="heading">Width TD:</span>
+                <input type="text" class="text_table table3">
+                <span class="heading">Height TD:</span>
+                <input type="text" class="text_table table4">
+            </div>
+
+            <div class="last">
+                <span class="heading">Width of border:</span>
+                <input type="text" class="text_table table5">
+                <span class="heading">Type of border:</span>
+                <select name="" class="select_table table6" id="">
+                    <option value="solid">solid</option>
+                    <option value="double">double</option>
+                    <option value="groove">groove</option>
+                    <option value="none">none</option>
+                </select>
+                <span class="heading">Color of border:</span>
+                <select name="" id="" class="select_table table7 ">
+                    <option value="red">red</option>
+                    <option value="black">black</option>
+                    <option value="green">green</option>
+                    <option value="blue">blue</option>
+                </select>
+            </div>
+            <button type="button" class="btn_create_table">Create table</button>
+        </div>
+        <div class="list_construktor">
+            <span>Count Li:</span>
+            <input type="text" class="text_table table8">
+            <span>Type of marks:</span>
+            <select name="" id="" class="select_table table9 ">
+                <option value="circle">circle</option>
+                <option value="disk">disk</option>
+                <option value="square">square</option>
+            </select>
+            <button type="button" class="btn_create_list">Create list</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
